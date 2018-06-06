@@ -1,0 +1,156 @@
+﻿<Window
+    x:Class="hw4_ChatWithFile_Client_WPF.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:hw4_ChatWithFile_Client_WPF"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Client"
+    Width="800"
+    Height="506.796"
+    mc:Ignorable="d">
+    <Grid>
+        <TextBox
+            Name="txtBoxChat"
+            Width="675"
+            Height="203"
+            Margin="107,200,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontSize="20"
+            TextWrapping="Wrap" />
+        <Button
+            Name="btnSend"
+            Width="209"
+            Height="58"
+            Margin="573,408,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="BtnSendClick"
+            Content="Send"
+            FontSize="20" />
+        <TextBox
+            Name="txtBpxNik"
+            Width="199"
+            Height="41"
+            Margin="107,10,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontSize="20"
+            TextWrapping="Wrap" />
+        <Label
+            Width="56"
+            Height="41"
+            Margin="46,10,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Nik"
+            FontSize="20" />
+        <TextBox
+            Name="txtBoxFilePath"
+            Width="509"
+            Height="41"
+            Margin="107,154,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontSize="16"
+            TextWrapping="Wrap" />
+        <Label
+            Width="92"
+            Height="41"
+            Margin="10,154,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="File path"
+            FontSize="20" />
+        <Label
+            Width="56"
+            Height="41"
+            Margin="46,200,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Chat"
+            FontSize="20" />
+        <Button
+            Name="btnConnect"
+            Width="127"
+            Height="41"
+            Margin="510,97,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="BtnConnectClick"
+            Content="Connect"
+            FontSize="20" />
+        <Label
+            Width="92"
+            Height="41"
+            Margin="413,5,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Server IP"
+            FontSize="20" />
+        <TextBox
+            Name="txtBoxServerIP"
+            Width="272"
+            Height="41"
+            Margin="510,5,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontSize="20"
+            TextWrapping="Wrap" />
+        <Label
+            Width="60"
+            Height="41"
+            Margin="413,51,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Port"
+            FontSize="20" />
+        <TextBox
+            Name="txtBoxPort"
+            Width="272"
+            Height="41"
+            Margin="510,51,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontSize="20"
+            TextWrapping="Wrap" />
+        <TextBox
+            Name="txtBoxMyMsg"
+            Width="461"
+            Height="58"
+            Margin="107,408,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            TextWrapping="Wrap" />
+        <Label
+            Width="92"
+            Height="41"
+            Margin="10,408,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Message"
+            FontSize="20" />
+        <Button
+            Name="btnDisconnect"
+            Width="140"
+            Height="41"
+            Margin="642,97,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="BtnDisconnectClick"
+            Content="Disconnect"
+            FontSize="20" />
+        <Button
+            Name="btnBrowse"
+            Width="161"
+            Height="41"
+            Margin="621,154,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="BtnBrowseClick"
+            Content="Browse"
+            FontSize="20" />
+
+    </Grid>
+</Window>
